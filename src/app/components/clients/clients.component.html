@@ -1,0 +1,55 @@
+<div class="form">
+  <h1 class="title">Clients</h1>
+  <h1>New Client:</h1>
+
+  <div class="columns">
+    <div class="column">
+      <input #newName placeholder="Name" class="input is-rounded full">
+    </div>
+  </div>
+
+  <div class="columns">
+    <div class="column">
+      <input #newLat placeholder="Latitude" class="input is-rounded full">
+    </div>
+  </div>
+
+  <div class="columns">
+    <div class="column">
+      <input #newLng placeholder="Longitude" class="input is-rounded full">
+    </div>
+
+
+
+  </div>
+
+
+<div class="center">
+  <div class="control">
+    <button class="button is-primary" (click)="this.newClient(newName.value, newLat.value, newLng.value)">Submit</button>
+  </div>
+</div>
+
+
+<div class="column">
+  <h1>Clients:</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Lattitude</th>
+        <th>Longitude</th>
+        <th>&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let client of clients">
+      <tr>
+        <td>{{ client.name }}</td>
+        <td>{{ client.lat }}</td>
+        <td>{{ client.lng }}</td>
+        <td (click)="this.deleteClient(client)" class="delete">Delete</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>

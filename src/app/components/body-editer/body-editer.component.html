@@ -1,0 +1,13 @@
+<div class="cont" *ngFor="let paragraph of paragraphs">
+
+
+<div class="columns" >
+  <div class="column">
+    <textarea [(ngModel)]="paragraph.content" class="textarea" value="{{paragraph.content}}"></textarea>
+  </div>
+</div>
+  <div class="columns">
+
+<button class="button is-primary" (click)="this.update(paragraph)">Submit</button>
+</div>
+</div>

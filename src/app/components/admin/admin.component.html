@@ -1,0 +1,22 @@
+<div class="columns" *ngIf="isLoggedIn">
+
+  <div class="column is-half-desktop is-flex-tablet">
+    <app-entries></app-entries>
+  </div>
+
+  <div class="column is-half-desktop is-flex-tablet">
+    <app-clients></app-clients>
+  </div>
+
+</div>
+
+<div class="section" *ngIf="isLoggedIn">
+  <app-body-editer></app-body-editer>
+</div>
+<!--
+<div class="section" *ngIf="isLoggedIn">
+  <app-map-editer></app-map-editer>
+</div> -->
+
+
+<app-footer></app-footer>

@@ -1,0 +1,28 @@
+.full {
+  width: 100%;
+}
+
+.delete {
+  margin-top: 8px;
+}
+
+.form {
+padding: 10px;
+}
+
+.delete {
+  background-color: red;
+  opacity: .5;
+}
+
+.delete:hover {
+  opacity: .8;
+}
+
+.columns {
+  margin: 0;
+}
+
+.table {
+  margin: auto;
+}

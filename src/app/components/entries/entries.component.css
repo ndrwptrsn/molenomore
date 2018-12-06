@@ -1,0 +1,25 @@
+.full {
+  width: 100%;
+}
+
+.delete {
+  margin-top: 8px;
+}
+
+.form {
+padding: 10px;
+}
+
+.delete {
+  background-color: red;
+  opacity: .5;
+}
+
+.delete:hover {
+  background-color: red;
+  opacity: .8;
+}
+
+.table {
+  margin: auto;
+}

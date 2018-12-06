@@ -1,0 +1,22 @@
+<div class="map">
+  <agm-map #AgmMap [latitude]="lat" [longitude]="lng" [zoom]="10" >
+
+    <agm-marker *ngFor="let point of entries; let i = index;" [latitude]="point.lat" [label]="{color: 'white', text: point.moles.toString()}" [longitude]="point.lng" [visible]="true" ></agm-marker>
+
+    <!-- <agm-marker *ngFor="let point of area; let i = index;" [latitude]="point.lat" [label]="{color: 'white', text: (i+1).toString()}" [longitude]="point.lng" [visible]="true" ></agm-marker> -->
+
+    <agm-circle *ngFor="let point of entries; let i = index;" [latitude]="point.lat" [longitude]="point.lng" [radius]="point.moles * this.radius" fillColor="#ff0000" fillOpacity="0.3" ></agm-circle>
+
+    <agm-polygon [paths]="area" fillColor="olivedrab" fillOpacity="0.4" strokeWeight="2" strokeOpacity="0.0" strokeColor="#ff0000"></agm-polygon>
+    <!-- <agm-polygon [paths]="areaMultnomah" fillColor="olivedrab" fillOpacity="0.4" strokeWeight="2" strokeOpacity="0.0" strokeColor="#ff0000"></agm-polygon> -->
+    <!-- <agm-polygon *ngFor="let path of area" [paths]="path" fillColor="olivedrab" fillOpacity="0.4" strokeWeight="2" strokeOpacity="0.0" strokeColor="#ff0000"></agm-polygon> -->
+
+    <!-- <agm-polygon [fillColor]="red" [fillOpacity]="0.5" [strokeColor]="blue" [strokeOpacity]="0.6" [strokeWeight]="2" [visible]="true" [zIndex]="1">
+      <ng-container *ngFor="let point of area">
+        <agm-polyline-point   [latitude]="point.lat" [longitude]="point.lng">
+        </agm-polyline-point>
+      </ng-container>Ï
+      </agm-polygon> -->
+    <!-- <agm-polygon [paths]="areaWashington" fillColor="olivedrab" fillOpacity="0.4" strokeWeight="2" strokeOpacity="0.0" strokeColor="#ff0000"></agm-polygon> -->
+  </agm-map>
+</div>

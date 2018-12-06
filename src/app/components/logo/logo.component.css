@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+  font-family: 'Lato', sans-serif;
+  font-size: 14pt;
+  color: #666;
+}
+
+p {
+  margin: 5px;
+}
+
+agm-map {
+  height: 100%;
+}
+
+.map {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 65vh;
+  width: 100vw;
+}
+
+.logo {
+  background-image: url('../../../assets/images/logoSmall.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  /* background-color: blue; */
+  top: 20px;
+  left: 20px;
+  height: 500px;
+  width: 250px;
+  z-index: 3;
+}
+
+
+.key {
+  /* background-color: red; */
+  text-align: center;
+  margin: auto;
+  height: 250px;
+  width: 175px;
+  margin-top: 250px;
+}
+
+@media only screen and (max-width: 414px) {
+  .logo {
+    background-position: top left;
+    top: 10px;
+    left: 0px;
+    height: 125px;
+    width: 350px;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .key {
+    /* background-color: green; */
+    text-align: center;
+    height: 100px;
+    width: 205px;
+    margin-top: 5px;
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .logo {
+    /* background-color: yellow; */
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .key {
+
+    width: 175px;
+
+  }
+}
+
+/* @media only screen and (max-width: 375px) {
+  .key {
+    margin-left: 0px;
+  }
+}
+
+
+@media only screen and (max-width: 414px) {
+  .key {
+    margin-left: 150px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .key {
+      margin-top: 0px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .logo {
+      height: 250px;
+      width: 125px;
+      background-size: contain;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .key {
+      margin-top: 150px;
+    }
+  } */
+
+.keyRow {
+  width: 100%;
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 25px;
+  height: 35px;
+  margin-bottom: 5px;
+}
+
+.square {
+  width: 25px;
+  height: 25px;
+  background-color: olivedrab;
+  opacity: 0.4;
+  margin: 5px;
+  margin-right: 0px;
+  border-radius: 25px;
+  display: inline-block;
+}
+
+.phone {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  margin-right: 0px;
+  border-radius: 5px;
+  display: inline-block;
+  background-image: url('../../../assets/images/smartphone.png');
+  background-size: contain;
+}
+
+.text {
+  width: 145px;
+
+  margin-top: 0px;
+
+  height: 100%;
+  display: block;
+  float: right;
+
+}
+
+.hidden {
+  z-index: -1;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}

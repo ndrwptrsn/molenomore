@@ -1,0 +1,14 @@
+
+<div class="contain">
+  <div class="column" *ngFor="let paragraph of paragraphs | async; let i = index">
+    <div  [ngClass]="{ left: i === 0, middle: i === 1, right: i === 2 }" [innerHTML]="paragraph.content">
+
+    </div>
+  </div>
+
+
+  <div class="picture">
+    <img src="../../../assets/images/moleimage.png" class="image">
+  </div>
+
+</div>

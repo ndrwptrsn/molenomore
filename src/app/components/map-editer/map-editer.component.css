@@ -1,0 +1,11 @@
+agm-map {
+  height: 100%;
+}
+
+.map {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 65vh;
+  width: 100vw;
+}

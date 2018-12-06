@@ -1,0 +1,17 @@
+<footer class="footerLeft">
+  <a routerLink="" class="bottomLinks">Home</a>
+  &nbsp;
+  <a routerLink="/admin" *ngIf="isLoggedIn" class="bottomLinks">Admin</a>
+  &nbsp;
+  <!-- <a routerLink="/map-editer" *ngIf="isLoggedIn" class="bottomLinks">Map Editer</a> -->
+  <!-- &nbsp; -->
+  <a class="bottomLinks" *ngIf="isLoggedIn" (click)="this.logout()">Logout</a>
+  <a class="bottomLinks" *ngIf="!isLoggedIn" (click)="this.login()">Login</a>
+
+
+</footer>
+
+
+<footer class="footerRight">
+  <a class="bottomLinks" href="http://ndrwptrsn.com" target="new">app 2019</a>
+</footer>
